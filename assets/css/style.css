@@ -1,0 +1,5159 @@
+@font-face {
+    font-family: "Vetrino";
+    src: url('/assets/fonts/Vetrino.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Unbounded";
+    src: url('/assets/fonts/Unbounded-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Unbounded";
+    src: url('/assets/fonts/Unbounded-Medium.ttf');
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: .7s;
+    font-family: 'Vetrino';
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #F1EADA;
+}
+
+h2 {
+    font-family: 'Vetrino';
+    font-size: 48px;
+    color: #716152;
+    text-align: center;
+    padding: 100px 0px 40px 0px;
+}
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* НАЧАЛО ХЕДЕРА */
+header {
+    background-color: #B3A292;
+    height: 100%;
+    padding: 20px 0px;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header__link a {
+    font-size: 25px;
+    font-family: 'Vetrino';
+    color: #ffffff;
+}
+
+.header__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.header__icon a {
+    font-size: 25px;
+    font-family: 'Vetrino';
+    color: #ffffff;
+}
+
+.burg {
+    display: none;
+}
+
+.fil {
+    display: none;
+}
+
+#filter,
+[for=filter] {
+    display: none;
+}
+
+#burger,
+[for=burger] {
+    display: none;
+}
+
+.header__icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* КОНЕЦ ХЕДЕРА */
+
+/* НАЧАЛО БАННЕР */
+.text__banner {
+    width: 677px;
+    height: 406px;
+    padding-top: 130px;
+}
+
+.text__banner h1 {
+    font-family: 'Vetrino';
+    font-size: 128px;
+    color: #9E8C7A;
+}
+
+.glav__banner {
+    padding-left: 60px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.foto__banner {
+    padding: 10px 0;
+}
+
+.button__banner {
+    padding-top: 60px;
+
+}
+
+.button__banner a {
+    width: 506px;
+    height: 88px;
+    background: #B3A292;
+    color: #ffffff;
+    text-align: center;
+    padding: 29px 90px;
+    margin: 60px;
+    font-family: 'Vetrino';
+    font-size: 32px;
+    color: #FFFFFF;
+
+}
+
+.str {
+    width: 100%;
+    border: 2px solid #9E8C7A;
+}
+
+/* КОНЕЦ БАННЕРА */
+
+/* НАЧАЛО КОЛЛЕКЦИИ */
+.kollecshion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+}
+
+.kart__kollecshion h3 {
+    font-family: 'Vetrino';
+    font-size: 28px;
+    color: #716152;
+}
+
+.kart__kollecshion h4 {
+    font-family: 'Vetrino';
+    font-size: 36px;
+    color: #000000;
+}
+
+.kart__kollecshion img {
+    width: 404px;
+    height: 410px;
+}
+
+.text__kollechion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+/* КОНЕЦ КОЛЛЕКЦИИ */
+
+/* НАЧАЛО КАТЕГОРИИ */
+.kategirii__vse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+.kategorii_odin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* КОНЕЦ КАТЕГОРИИ */
+
+/* НАЧАЛО ФУТЕРА */
+footer {
+    background-color: #B3A292;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.icon_seti {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.logo__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+    align-items: center;
+}
+
+.nav__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav__kontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.obrat_forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 55px;
+}
+
+input {
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    padding: 10px;
+    width: 322px;
+    font-family: 'Unbounded';
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+input::placeholder {
+    font-family: 'Unbounded';
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.forma_obr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+
+}
+
+.nav__footer a {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.nav__kontakt a {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.nav__kontakt p {
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.obrat_forma h6 {
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.btn__footer {
+    padding: 12px 84px;
+    width: 320px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+}
+
+.btn__footer a {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 33px;
+}
+
+.str__name {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 45px;
+    padding-bottom: 33px;
+}
+
+
+.footer_name p {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.footer_name a {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+/* КОНЕЦ ФУТЕРА */
+/* КОНЕЦ ГЛАВНОЙ  */
+
+
+
+
+/* НАЧАЛО БАННЕРА */
+.banner__about {
+    background-image: url(../img/about/about_banner.png);
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.banner__about__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+
+
+}
+
+.banner__about__text h1 {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+/* КОНЕЦ БАННЕРА */
+
+/* НАЧАЛО О КОМПАНИИ */
+.oabout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 85px;
+}
+
+.info__about a {
+    font-family: 'Unbounded';
+    font-size: 15px;
+    color: #0000004b;
+}
+
+.document {
+    padding-top: 20px;
+}
+
+.document a:hover{
+    text-decoration: underline;
+    color: #29292D;
+}
+.info__about p {
+    font-family: 'Unbounded';
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 85px 52px;
+    width: 706px;
+    height: 320px;
+
+    background: rgba(179, 162, 146, 0.63);
+    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.76);
+    border-radius: 35px;
+}
+
+/* КОНЕЦ О КОМПАНИИ */
+
+/* НАЧАЛО ТЕКСТ ЭКОЛОГОИЧСЕКИЙ */
+.ekolig__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 85px;
+}
+
+.ekolog__about_info p {
+    width: 794px;
+    height: 75px;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #716152;
+}
+
+/* КОНЕЦ ТЕКСТ ЭКОЛОГОИЧСЕКИЙ */
+
+
+/* НАЧАЛО ПРОИЗВОДСТА ТЕКСТ */
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.about_proizvodsvo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.about_proizvodsv {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    padding-bottom: 100px;
+}
+
+.info_proizvodsvo_info h3 {
+    width: 401px;
+    height: 90px;
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 36px;
+    color: #716152;
+}
+
+.info_proizvodsvo_info p {
+    width: 578px;
+    height: 75px;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 20px;
+    color: #716152;
+}
+
+.info_proizvodsvo_info {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* КОНЕЦ ПРОИЗВОДСТА ТЕКСТ */
+
+
+/* НАЧАЛО КАТАЛОГА */
+.katalog_kart_odin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(179, 162, 146, 0.14);
+    width: 386px;
+    height: 630px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 50px;
+    background: #B3A292;
+    border-radius: 10px;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.row:hover {
+    background-color: transparent;
+    border: 1px solid #716152;
+    color: #716152;
+}
+
+.rowa {
+    border: 1px solid #716152;
+    color: #716152;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.ro {
+    border: 1px solid #716152;
+    color: #716152;
+    width: 50px;
+    height: 50px;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 22px;
+    color: #716152;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.rov {
+    background: #B3A292;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.ro:hover {
+    background: #B3A292;
+    color: #ffffff;
+}
+
+.katalog_kart_odin h3 {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 24px;
+    color: #716152;
+    padding: 15px;
+}
+
+.info__kart h4 {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000;
+}
+
+.info__kart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 30px;
+}
+
+.katalog_kart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 60px;
+}
+
+.katalog {
+    padding-bottom: 100px;
+}
+
+/* КОНЕЦ КАТАЛОГА */
+/* начало бан */
+.ban{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ban p{
+    color: #000000;
+    font-size: 50px;
+}
+/* конец бан */
+/* НАЧАЛО КАРТОЧКИ */
+.img__kart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.katakig_img {
+    width: 554px;
+    height: 404px;
+}
+
+
+.img_kart_glav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+
+.img_kartochki {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.img_kartochki img {
+    width: 226px;
+    height: 223px;
+}
+.glav_img_kart img{
+    background-color: #9e8c7a1a;
+}
+.glav_img_kart img {
+    width: 654px;
+    height: 741px;
+}
+.img_kartochki img{
+    background-color: #9e8c7a1a;
+}
+.info__kartochka h3 {
+    width: 404px;
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 40px;
+    color: #716152;
+}
+
+.info__kartochka {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kartochka {
+    padding: 100px 0 100px 0;
+}
+
+.opisanie_kart h5 {
+    width: 550px;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.opisanie_kart p {
+    font-size: 16px;
+}
+
+.price_kart h5 {
+    width: 171px;
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #716152;
+}
+
+.nalivii p {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #716152;
+}
+
+.nalivii {
+    padding: 35px 0 60px 0;
+}
+
+.infografika p {
+    width: 97px;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 13px;
+    color: #000000;
+}
+
+.infografika_kart {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 60px 0;
+}
+
+.opisanie_kart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infografika {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_kart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+}
+
+/* КОНЕЦ КАРТОЧКИ */
+
+/* НАЧАЛО КОРЗИНЫ */
+.korzina_glav {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.zakaz_korzina {
+    display: flex;
+    flex-direction: column;
+}
+
+.tovar_korzina {
+    display: flex;
+    flex-direction: row;
+}
+
+.img_korzina {
+    padding-right: 10px;
+}
+
+.rp {
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+    color: #716152;
+    text-align: left;
+}
+
+.itog {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 24px;
+    color: #716152;
+    padding-bottom: 20px;
+}
+
+.info_div_korz h3 {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.info_div_korz h4 {
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #716152;
+    padding-bottom: 70px;
+}
+
+.info_div_korz p {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000;
+}
+
+.tovar_korzina {
+    width: 796px;
+    height: 428px;
+    background: rgba(179, 162, 146, 0.19);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.dostavka_korz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 367px;
+    height: 62px;
+    background: rgba(48, 108, 51, 0.56);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.zakaz_korzina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    height: 519px;
+    background: rgba(179, 162, 146, 0.19);
+    border-radius: 30px;
+    padding: 80px 15px 40px 15px;
+}
+
+.promokod {
+    width: 247px;
+    height: 46px;
+    background: rgba(179, 162, 146, 0.23);
+    border-radius: 20px;
+    color: #000000;
+    padding: 20px;
+    margin-top: 22px;
+}
+
+.promokod::placeholder {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Vetrino';
+}
+
+.promokod_korzina input {
+    border: none;
+}
+
+.promokod_korzina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 367px;
+    height: 150px;
+    background: rgba(179, 162, 146, 0.21);
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.tova_prise h4 {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.tova_prise p {
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.tova_prise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 35px;
+}
+
+.btn_button_korzina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 331px;
+    height: 54px;
+    background: #716152;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.btn_button_korzina:hover {
+    border: 1px solid #554C46;
+    background-color: transparent;
+}
+
+.btn_button_korzina a:hover {
+    color: #554C46;
+}
+
+.btn_button_korzina a {
+    height: 25px;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.counter {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+#increment-btn,
+#decrement-btn,
+#reset {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #554C46;
+    border: 2px solid #554C46;
+    color: white;
+    margin: 20px;
+}
+
+#reset {
+    font-size: 20px;
+}
+
+#counter-value {
+    height: 50px;
+    min-width: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #554C46;
+    /* margin-top: 20px; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* КОНЕЦ КОРЗИНЫ */
+
+/* НАЧАЛО РЕГАСТРАЦИИ */
+.registrati {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 170px 320px;
+}
+
+.regist {
+    padding-bottom: 20px;
+}
+
+.registrati h2,
+.delete h2 {
+    font-family: 'Vetrino';
+    font-size: 50px;
+    text-align: left;
+    color: #554C46;
+    font-weight: 300;
+}
+
+.registrati h2 {
+    padding-bottom: 90px;
+}
+
+.form_regista input {
+    font-family: 'Vetrino';
+    width: 620px;
+    height: 70px;
+    border: 1px solid #554C46;
+    background-color: transparent;
+    color: #554C46;
+    padding-left: 20px;
+}
+
+.form_regista ::placeholder {
+    text-align: left;
+    font-family: 'Vetrino';
+    font-size: 20px;
+    color: #554C46;
+}
+
+.form_regista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 25px;
+}
+
+.registrati a {
+    background-color: transparent;
+    border: 1px solid #554C46;
+    padding: 14px 100px;
+    margin: 0 auto;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 20px;
+    color: #716152;
+}
+
+.registrati a:hover {
+    background-color: #554C46;
+    color: #FFFFFF;
+    transition: .9s;
+}
+
+.registrati a:not(:hover) {
+    transition: .9s;
+}
+
+.btn_edit_user {
+    padding: 15px 47px;
+    background-color: #9E8C7A;
+    color: #FFFFFF;
+}
+
+.regista-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+
+.regista-info p {
+    font-family: 'Vetrino';
+    color: #554C46;
+    font-size: 14px;
+
+}
+
+.regista-info a {
+    font-family: 'Vetrino';
+    color: #554C46;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.chek-log {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.gal {
+    width: 17px;
+    height: 17px;
+}
+
+.chek-log p {
+    font-size: 18px;
+    color: black;
+}
+
+.btn_regist {
+    font-family: 'Vetrino';
+    width: 620px;
+    height: 70px;
+    border: 1px solid #554C46;
+    background-color: transparent;
+    color: #554C46;
+    padding-left: 20px;
+    margin-top: 25px
+}
+.btn_regist:hover{
+    background-color: #9E8C7A;
+    color: #FFFFFF;
+}
+/* .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ffffff;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
+
+/* КОНЕЦ РЕГЕСТРАЦИИ */
+
+/*  НАЧАЛО ЛОГТН*/
+.login {
+    padding: 20px 0px 90px 0;
+}
+
+.logina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logina h2 {
+    font-family: "Vetrino";
+    font-size: 50px;
+    text-align: center;
+    color: #554C46;
+    padding-bottom: 90px;
+    font-weight: 300;
+}
+
+.forma_login input {
+    font-family: 'Vetrino';
+    width: 620px;
+    height: 70px;
+    border: 1px solid #554C46;
+    background-color: transparent;
+    color: #554C46;
+    padding-left: 20px;
+}
+
+.forma_login ::placeholder {
+    text-align: left;
+    font-family: "Vetrino";
+    font-size: 20px;
+    color: #554C46;
+}
+
+.forma_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 55px;
+}
+
+.logina a {
+    background-color: transparent;
+    border: 1px solid #554C46;
+    padding: 14px 100px;
+    margin: 0 auto;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 20px;
+    color: #716152;
+}
+
+.logina a:hover {
+    background-color: #554C46;
+    color: #FFFFFF;
+    transition: .9s;
+}
+
+.logina a:not(:hover) {
+    transition: .9s;
+}
+
+.logina-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.logina-info p {
+    font-family: "Vetrino";
+    color: #554C46;
+    font-size: 14px;
+
+}
+
+.logina-info a {
+    font-family: 'Vetrino';
+    color: #554C46;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* КОНЕЦ ЛОГИН */
+/* НАЧАЛО СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ */
+.polzvatel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    padding-bottom: 60px;
+}
+
+.img_polzv_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.login_polzovatel {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_polzovatel a {
+    padding: 15px 47px;
+    background-color: #B3A292;
+    font-family: 'Vetrino';
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.zakaz__polzovatel {
+    width: 596px;
+    height: 355px;
+    background: rgba(179, 162, 146, 0.14);
+    border: 1px solid #716152;
+    padding: 45px;
+}
+
+.img_polzv_login img {
+    width: 150px;
+    height: 150px;
+}
+
+.itog_zakaz__odin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 404px;
+    padding-top: 30px;
+}
+
+.itog_zakaz p {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.itog_zakaz h5 {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.zakaz__polzovatel h3 {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+.login_polzovatel p {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+.col {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+/* КОНЕЦ СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ */
+/* ADMIN ТОВАРЫ */
+.panel__tovar {
+    width: 350px;
+    background-color: #B3A292;
+    height: 1050px;
+}
+
+.panel__tovar {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin_exit {
+    padding-top: 60px;
+}
+
+.admin-bloc h3 {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 80px 0 40px 0;
+
+}
+
+.admin-bloc p {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+
+.profile-info h5 {
+    font-family: 'Unbounded';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.list-tovar a {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.admin-bloc {
+    background-color: #716152;
+    width: 100%;
+    height: 100%;
+}
+
+.admin-bl {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-tovar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 150px;
+}
+
+
+
+.card-tovar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+}
+
+.card-tovar img {
+    width: 185px;
+    height: 199px;
+}
+
+.cards-tovar {
+    display: flex;
+    flex-direction: column;
+}
+
+.tovar__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.panel {
+    width: 400px;
+    background-color: #554C46;
+    padding-left: 60px;
+}
+
+.panel-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_admin_tovar {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+}
+
+.panel-block {
+    margin-bottom: 645px;
+}
+
+.card-tovar h6 {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.btn_edit a {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FBF6F2;
+}
+
+.btn_delete a {
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FBF6F2;
+}
+
+.panel-logo {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+}
+
+.panel-logo img {
+    width: 151px;
+    height: 67px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px;
+    padding: 0px 0px 80px 0px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.foto {
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    width: 77px;
+    height: 77px;
+}
+
+.cards h5 {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding: 70px 50px 50px 50px;
+
+}
+
+.profile-info h6 {
+    font-family: 'Unbounded';
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+.profile-info p {
+    font-family: 'Unbounded';
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 200;
+    padding-top: 60px;
+    padding-top: 5px;
+}
+
+.panel-block a {
+    color: #FFFFFF;
+    font-size: 27px;
+    font-family: 'Unbounded';
+}
+
+.admin-block {
+    padding-left: 75px;
+}
+
+.admin-block h3 {
+    text-align: center;
+    font-family: 'Unbounded';
+    font-size: 38px;
+    color: #554C46;
+    padding: 108px 350px 90px 350px;
+}
+
+.admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards-tovar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* КОНЕЦ АДМИН ТОВАРОВ */
+
+/* НАЧАЛО АДМИН ПОЛЬЗОВАТЕЛЕЙ */
+.panel {
+    width: 400px;
+}
+
+.polzovalel_admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 120px;
+    background: rgba(217, 217, 217, 0.1);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+
+
+}
+
+.polzovalel_admin a {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* КОНЕЦ АДМИН ПОЛЬЗОВАТЕЛЕЙ */
+
+/* НАЧАЛО РЕДАКТИРОВАНИЯ */
+.form_login input {
+    width: 665px;
+    height: 78px;
+    border: 1px solid #716152;
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 17px;
+    color: #503217;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_login ::placeholder {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 17px;
+    color: #503217;
+}
+
+.login-block a {
+    width: 411px;
+    height: 82px;
+    border: 1px solid #716152;
+    padding: 30px 137px;
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #503217;
+}
+
+.header_420 {
+    display: none;
+}
+
+/* Начало удаления */
+
+
+.delete h2 {
+
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 24px;
+    color: #29292D;
+}
+
+.info-delete p {
+    font-family: 'Unbounded';
+    font-weight: 250;
+    font-size: 20px;
+    line-height: 21px;
+    color: #29292D;
+
+}
+
+.delete-btn a {
+    width: 175px;
+    height: 68px;
+    background: #FFFFFF;
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: #000000;
+    padding: 24px 33px;
+}
+
+.delete-btn {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+/* конец удаления */
+/* редактирование */
+/*  НАЧАЛО ЛОГТН*/
+.form_regist input {
+    width: 665px;
+    height: 78px;
+    border: 1px solid #716152;
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 17px;
+    color: #503217;
+}
+
+.form_regist ::placeholder {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 17px;
+    color: #503217;
+}
+
+.form_regist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.regist-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 280px;
+}
+
+/* .regist-block a {
+    width: 411px;
+    height: 82px;
+    border: 1px solid #716152;
+    padding: 30px 125px;
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #503217;
+} */
+.btn__edit {
+    width: 411px;
+    height: 82px;
+    border: 1px solid #716152;
+    padding: 30px 125px;
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #503217;
+}
+
+/*  НАЧАЛО Добавление*/
+.form_dobav input {
+    width: 665px;
+    height: 78px;
+    border: 1px solid #716152;
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 17px;
+    background-color: transparent;
+    color: #503217;
+}
+
+.form_dobav ::placeholder {
+    font-family: 'Vetrino';
+    font-weight: 400;
+    font-size: 17px;
+    color: #503217;
+}
+
+.form_dobav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.dobav-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 280px;
+}
+
+.dobav-block a {
+    width: 411px;
+    height: 82px;
+    border: 1px solid #716152;
+    padding: 30px 150px;
+    font-family: 'Vetrino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #503217;
+}
+
+.fil_420 {
+    display: none;
+}
+
+.error {
+    color: #00000086;
+    font-size: 14px;
+}
+
+
+
+
+/* КОНЕЦ РЕДАКТИРОВАНИЯ */
+@media (max-width: 768px) {
+
+    /* хедер */
+
+    header {
+        background-color: #B3A292;
+        height: 100%;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    [for=burger] {
+        display: flex;
+        position: fixed;
+        right: 40px;
+        top: 27px;
+        z-index: 100000;
+    }
+
+    [for=burger]::before {
+        content: url(../img/burg.svg);
+        font-size: 25px;
+    }
+
+    .burg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #B3A292;
+        padding: 50px;
+        gap: 15px;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        display: none;
+        z-index: 10000;
+        gap: 10px;
+        border-radius: 0px;
+    }
+
+    .burg a {
+        color: white;
+    }
+
+    .burg img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #burger:checked+[for=burger]+.burg {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../img/close.svg);
+        font-size: 30px;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .content {
+        padding: 0px 60px;
+    }
+
+    /* конец хедера */
+    /* начало главной */
+    .text__banner {
+        padding-top: 70px;
+    }
+
+    .text__banner h1 {
+        font-family: 'Vetrino';
+        font-size: 48px;
+        color: #9E8C7A;
+    }
+
+    .glav__banner {
+        padding-left: 30px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .foto__banner {
+        padding: 10px 0;
+    }
+
+    .button__banner {
+        padding-top: 30px;
+
+    }
+
+    .banner__about {
+        background-image: url(../img/about/about_banner.png);
+        background-size: cover;
+        height: 48vh;
+        width: 100%;
+    }
+
+    .button__banner a {
+
+        width: 355px;
+        height: 58px;
+        background: #B3A292;
+        color: #ffffff;
+        text-align: center;
+        padding: 19px 40px;
+        margin: 20px;
+        font-family: 'Vetrino';
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .foto__banner img {
+        width: 251px;
+        height: 319px;
+    }
+
+    /* НАЧАЛО КОЛЛЕКЦИИ */
+    .kollecshion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    .kart__kollecshion img {
+        width: 210px;
+        height: 218px;
+    }
+
+    .kart__kollecshion h3 {
+        font-family: 'Vetrino';
+        font-size: 16px;
+        color: #716152;
+    }
+
+    .kart__kollecshion h4 {
+        font-family: 'Vetrino';
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .text__kollechion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 25px;
+    }
+
+    /* КОНЕЦ КОЛЛЕКЦИИ */
+    h2 {
+        font-family: 'Vetrino';
+        font-size: 28px;
+        color: #716152;
+        text-align: center;
+        padding: 60px 0px 20px 0px;
+    }
+
+    /* НАЧАЛО КАТЕГОРИИ */
+    .kategirii__vse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 18px;
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+
+    .kategorii_odin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .kategirii__vse img {
+        width: 318px;
+        height: 449px;
+    }
+
+    .kategorii_odin img {
+        width: 348px;
+        height: 217px;
+    }
+
+    /* КОНЕЦ КАТЕГОРИИ */
+    /* НАЧАЛО ФУТЕРА */
+    footer {
+        background-color: #B3A292;
+        height: 100%;
+        padding-top: 60px;
+        padding-bottom: 45px;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .icon_seti {
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+    }
+
+    .logo__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .nav__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding: 45px 0px 40px 0px;
+    }
+
+    .nav__kontakt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .obrat_forma {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 55px;
+        align-items: center;
+    }
+
+    input {
+        border-bottom: 1px solid #ffffff;
+        background-color: transparent;
+        padding: 10px;
+        width: 322px;
+        font-family: 'Unbounded';
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    input::placeholder {
+        font-family: 'Unbounded';
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    .forma_obr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        align-items: center;
+    }
+
+    .nav__footer a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .nav__kontakt a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .nav__kontakt p {
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .obrat_forma h6 {
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .btn__footer {
+
+        padding: 12px 84px;
+        width: 320px;
+        height: 44px;
+        border: 1px solid #FFFFFF;
+    }
+
+    .btn__footer a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .footer_name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 33px;
+    }
+
+    .str__name {
+        width: 100%;
+        border-bottom: 1px solid #ffffff;
+        padding-top: 45px;
+        padding-bottom: 33px;
+    }
+
+
+    .footer_name p {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .footer_name a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    /* КОНЕЦ ФУТЕРА */
+
+    /* НАЧАЛО БАННЕРА */
+    .banner__about {
+        background-image: url(../img/about/about_banner.png);
+        background-size: cover;
+        height: 45vh;
+        width: 100%;
+    }
+
+    .banner__about__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+
+
+    }
+
+    .banner__about__text h1 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        align-items: center;
+    }
+
+    /* КОНЕЦ БАННЕРА */
+
+    /* НАЧАЛО О КОМПАНИИ */
+    .oabout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .info__about img {
+        width: 237px;
+        height: 311px;
+    }
+
+    .info__about p {
+        font-family: 'Unbounded';
+        font-size: 13px;
+        background: rgba(179, 162, 146, 0.63);
+        box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.76);
+        border-radius: 35px;
+        width: 394px;
+        height: 193px;
+        padding: 33px 54px;
+    }
+
+    /* КОНЕЦ О КОМПАНИИ */
+
+    /* НАЧАЛО ТЕКСТ ЭКОЛОГОИЧСЕКИЙ */
+    .ekolig__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 85px;
+    }
+
+    .ekolog__about_info img {
+        width: 534px;
+        height: 326px;
+    }
+
+    .ekolog__about_info p {
+        width: 591px;
+        height: 75px;
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    /* КОНЕЦ ТЕКСТ ЭКОЛОГОИЧСЕКИЙ */
+
+
+    /* НАЧАЛО ПРОИЗВОДСТА ТЕКСТ */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .about_proizvodsvo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 55px;
+        padding-bottom: 60px;
+    }
+
+    .about_proizvodsvo img,
+    .about_proizvodsv img {
+        width: 313px;
+        height: 300px;
+    }
+
+    .about_proizvodsv {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 100px;
+    }
+
+    .info_proizvodsvo_info h3 {
+        width: 323px;
+        height: 40px;
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #716152;
+    }
+
+    .info_proizvodsvo_info p {
+        width: 316px;
+        height: 68px;
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    .info_proizvodsvo_info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* КОНЕЦ ПРОИЗВОДСТА ТЕКСТ */
+    /* НАЧАЛО КАТАЛОГА */
+    .katalog_kart_odin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(179, 162, 146, 0.14);
+        width: 200px;
+        height: 326px;
+    }
+
+    .img__kart img {
+        width: 165px;
+        height: 183px;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 40px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 123px;
+        height: 36px;
+        background: #B3A292;
+        border-radius: 10px;
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+
+    .row:hover {
+        background-color: transparent;
+        border: 1px solid #716152;
+        color: #716152;
+    }
+
+    .rowa {
+        border: 1px solid #716152;
+        color: #716152;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 123px;
+        height: 36px;
+        border-radius: 10px;
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .ro {
+        border: 1px solid #716152;
+        color: #716152;
+        width: 45px;
+        height: 45px;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 22px;
+        color: #716152;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .rov {
+        background: #B3A292;
+        color: #ffffff;
+        width: 45px;
+        height: 45px;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .ro:hover {
+        background: #B3A292;
+        color: #ffffff;
+    }
+
+    .katalog_kart_odin h3 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 16px;
+        color: #716152;
+        padding-bottom: 33px;
+    }
+
+    .info__kart h4 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .info__kart img {
+        width: 29px;
+        height: 29px;
+    }
+
+    .info__kart {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+
+    .katalog_kart {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding-top: 60px;
+    }
+
+    .katalog {
+        padding-bottom: 100px;
+    }
+
+    /* КОНЕЦ КАТАЛОГА */
+    /* НАЧАЛО КОРЗИНЫ */
+    .korzina_glav {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .zakaz_korzina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tovar_korzina {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img_korzina {
+        padding-right: 10px;
+    }
+
+    .rp {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 43px;
+        color: #716152;
+        text-align: left;
+    }
+
+    .itog {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 24px;
+        color: #716152;
+        padding-bottom: 20px;
+    }
+
+    .info_div_korz h3 {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 24px;
+        color: #000000;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    .info_div_korz h4 {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #716152;
+        padding-bottom: 70px;
+    }
+
+    .img_korzina img {
+        width: 257px;
+        height: 275px;
+    }
+
+    .info_div_korz p {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;
+    }
+
+    .tovar_korzina {
+        width: 619px;
+        height: 300px;
+        background: rgba(179, 162, 146, 0.19);
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+
+    .dostavka_korz {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 367px;
+        height: 62px;
+        background: rgba(48, 108, 51, 0.56);
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .zakaz_korzina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 390px;
+        height: 519px;
+        background: rgba(179, 162, 146, 0.19);
+        border-radius: 30px;
+        padding: 80px 15px 40px 15px;
+    }
+
+    .promokod {
+        width: 247px;
+        height: 46px;
+        background: rgba(179, 162, 146, 0.23);
+        border-radius: 20px;
+        color: #000000;
+        padding: 20px;
+        margin-top: 22px;
+    }
+
+    .promokod::placeholder {
+        color: #000000;
+        font-size: 16px;
+        font-family: 'Vetrino';
+    }
+
+    .promokod_korzina input {
+        border: none;
+    }
+
+    .promokod_korzina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 367px;
+        height: 150px;
+        background: rgba(179, 162, 146, 0.21);
+        border-radius: 20px;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .tova_prise h4 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .tova_prise p {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    .tova_prise {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+        padding-top: 35px;
+    }
+
+    .btn_button_korzina {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 331px;
+        height: 54px;
+        background: #716152;
+        border-radius: 20px;
+        align-items: center;
+        margin-top: 44px;
+    }
+    .btn_regist {
+        font-family: 'Vetrino';
+        width: 535px;
+        height: 62px;
+        border: 1px solid #554C46;
+        background-color: transparent;
+        color: #554C46;
+        padding-left: 20px;
+        margin-top: 25px
+    }
+    .btn_regist:hover{
+        background-color: #9E8C7A;
+        color: #FFFFFF;
+    }
+    .btn_button_korzina:hover {
+        border: 1px solid #554C46;
+        background-color: transparent;
+    }
+
+    .btn_button_korzina a:hover {
+        color: #554C46;
+    }
+
+    .btn_button_korzina a {
+        height: 25px;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .counter {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+
+    #increment-btn,
+    #decrement-btn,
+    #reset {
+        height: 40px;
+        width: 80px;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 30px;
+        background-color: #554C46;
+        border: 2px solid #554C46;
+        color: white;
+        margin: 20px;
+    }
+
+    #reset {
+        font-size: 20px;
+    }
+
+    #counter-value {
+        height: 40px;
+        min-width: 80px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #554C46;
+        /* margin-top: 20px; */
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* КОНЕЦ КОРЗИНЫ */
+    /* НАЧАЛО КАРТОЧКИ */
+    .glav_img_kart img {
+        width: 413px;
+        height: 623px;
+    }
+
+    .img_kartochki img {
+        width: 165px;
+        height: 196px;
+    }
+
+    .img__kart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .img_kart_glav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+    .img__kart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_kartochki {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .info__kartochka h3 {
+        font-size: 38px;
+    }
+
+    .info__kartochka {
+        padding-top: 30px;
+    }
+
+    .kartochka {
+        padding: 20px;
+    }
+
+    .opisanie_kart h5 {
+        width: 550px;
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .opisanie_kart p {
+        font-size: 20px;
+    }
+
+    .infografika img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .price_kart h5 {
+        width: 171px;
+        font-size: 35px;
+        line-height: 50px;
+        color: #716152;
+    }
+
+    .nalivii p {
+        font-size: 16px;
+        line-height: 17px;
+        color: #716152;
+    }
+
+    .nalivii {
+        padding: 30px 0 50px 0;
+    }
+
+    .infografika p {
+        width: 97px;
+        font-size: 13px;
+        color: #000000;
+    }
+
+    .infografika_kart {
+        display: flex;
+        flex-direction: row;
+        gap: 55px;
+        padding: 60px 0;
+    }
+
+    .opisanie_kart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .infografika {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price_kart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 160px;
+        padding-bottom: 40px;
+    }
+
+    .price_kart img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* КОНЕЦ КАРТОЧКИ */
+
+    /* НАЧАЛО СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ */
+    .polzvatel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 85px;
+        padding-bottom: 60px;
+    }
+
+    .img_polzv_login {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 25px;
+        padding-top: 40px;
+    }
+
+    .login_polzovatel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .zakaz__polzovatel {
+        width: 596px;
+        height: 355px;
+        background: rgba(179, 162, 146, 0.14);
+        border: 1px solid #716152;
+        padding: 45px;
+    }
+
+    .img_polzv_login img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .itog_zakaz__odin {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 404px;
+        padding-top: 30px;
+    }
+
+    .itog_zakaz p {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    .itog_zakaz h5 {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .zakaz__polzovatel h3 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 30px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .login_polzovatel p {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 5px;
+    }
+
+    .col {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 21px;
+        text-align: center;
+        color: #000000;
+    }
+
+    /* КОНЕЦ СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ */
+    /* НАЧАЛО РЕГАСТРАЦИИ */
+    .registrati,
+    .delete-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .registrati h2,
+    .delete h2 {
+        font-size: 32px;
+    }
+
+    .registrati h2 {
+        padding-bottom: 90px;
+    }
+
+    .form_regista input {
+        width: 535px;
+        height: 62px;
+    }
+
+    .regista-info p {
+        font-family: 'Vetrino';
+        color: #554C46;
+        font-size: 14px;
+
+    }
+
+    .regista-info a {
+        font-family: 'Vetrino';
+        color: #554C46;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    .registrati a {
+        background-color: transparent;
+        border: 1px solid #554C46;
+        padding: 14px 100px;
+        margin: 0 auto;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 16px;
+        color: #716152;
+    }
+
+    /* КОНЕЦ РЕГЕСТРАЦИИ */
+
+    /*  НАЧАЛО ЛОГТН*/
+    .login {
+        padding: 20px 0px 90px 0;
+    }
+
+    .logina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logina h2 {
+        font-size: 32px;
+        padding-bottom: 90px;
+    }
+
+    .forma_login input {
+        font-family: 'Vetrino';
+        width: 535px;
+        height: 62px;
+    }
+
+    .forma_login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 55px;
+    }
+
+    .logina a {
+        font-size: 16px;
+    }
+
+    .logina-info p {
+        font-family: "Vetrino";
+        color: #554C46;
+        font-size: 14px;
+    }
+
+    /* ADMIN ТОВАРЫ */
+    .panel__tovar {
+        width: 290px;
+        background-color: #B3A292;
+        height: 900px;
+    }
+
+    .panel__tovar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .admin {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .admin-bloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin_exit {
+        padding-top: 60px;
+    }
+
+    .profile-info h5 {
+        position: absolute;
+        font-family: 'Unbounded';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 21px;
+        color: #ffffff;
+        padding: 20px 0px;
+    }
+
+    .list-tovar a {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .admin-bloc {
+        background-color: #716152;
+        width: 100%;
+        height: 100%;
+    }
+
+    .list-tovar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 150px;
+    }
+
+    .card-tovar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .cards-tovar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tovar__btn {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .panel {
+        width: 450px;
+        background-color: #554C46;
+        padding-left: 30px;
+    }
+
+    .panel-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn_admin_tovar {
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+    }
+
+    .panel-block {
+        margin-bottom: 345px;
+    }
+
+    .card-tovar h6 {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 22px;
+        color: #FFFFFF;
+
+    }
+
+    .btn_edit a {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FBF6F2;
+    }
+
+    .btn_delete a {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FBF6F2;
+    }
+
+    .panel-logo {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        padding-left: 50px;
+    }
+
+    .panel-logo img {
+        width: 151px;
+        height: 67px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 15px;
+        padding: 0px 0px 80px 0px;
+    }
+
+    .profile-info h5 {
+        font-family: 'Unbounded';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+
+    .foto {
+        border-radius: 100%;
+        background-color: #FFFFFF;
+        width: 77px;
+        height: 77px;
+    }
+
+    .admin-bloc p {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+
+    }
+
+    .cards h5 {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        color: #FFFFFF;
+        padding: 70px 50px 50px 50px;
+
+    }
+
+    .profile-info h6 {
+        font-family: 'Unbounded';
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: 200;
+        padding-top: 20px;
+    }
+
+    .panel-block a {
+        color: #FFFFFF;
+        font-size: 27px;
+        font-family: 'Unbounded';
+    }
+
+    .admin-block {
+        padding-left: 75px;
+    }
+
+    .admin {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cards-tovar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .admin-bloc h3 {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 60px 0 40px 0;
+    }
+
+    .btn_admin_tovar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn_edit a {
+        font-size: 12px;
+    }
+
+    .btn_delete a {
+        font-size: 12px;
+    }
+
+    .card-tovar img {
+        width: 185px;
+        height: 199px;
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .admin {
+        display: none;
+    }
+
+    .admin-bl {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* КОНЕЦ АДМИН ТОВАРОВ */
+    /* хедер админ */
+    .header_420 {
+        display: flex;
+        height: 80px;
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .panel-block {
+        display: none;
+    }
+
+    .panel-logo {
+        display: none;
+    }
+
+    .line-panel {
+        display: none;
+    }
+
+    .burg-admin {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #554C46;
+        padding: 50px;
+        gap: 15px;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        display: none;
+        z-index: 10000;
+        gap: 10px;
+        border-radius: 0px;
+
+    }
+
+
+
+    .burg-admin img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .burg-admin a {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: white;
+    }
+
+
+    .profile-info h6 {
+        font-family: 'Unbounded';
+        font-size: 24px;
+        color: #FFFFFF;
+        font-weight: 200;
+        padding-top: 55px;
+    }
+
+    .error {
+        color: #00000034;
+        font-size: 14px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #burger:checked+[for=burger]+.burg-admin {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../img/close.svg);
+        font-size: 11px;
+    }
+
+    .logo__header img {
+        width: 103px;
+        height: 60px;
+    }
+
+
+
+    /* конец хедер админ */
+    /* НАЧАЛО АДМИН ПОЛЬЗОВАТЕЛЕЙ */
+
+    .polzovalel_admin {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 30px;
+        background: rgba(217, 217, 217, 0.1);
+        padding: 20px 30px;
+        margin-bottom: 30px;
+
+
+    }
+
+    .polzovalel_admin a {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    /* КОНЕЦ АДМИН ПОЛЬЗОВАТЕЛЕЙ */
+    /* Начало удаления */
+    .delete {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 106px 40px;
+    }
+
+    .delete-btn {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        gap: 180px;
+    }
+
+    .card-tovar h6 {
+        font-family: 'Unbounded';
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    /* конец удаления
+.container {
+    margin-left: 85px;
+    margin-bottom: 30px;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+}
+.login_polzovatel a{
+    padding: 10px 37px;
+    background-color: #B3A292;
+    font-family: 'Vetrino';
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.container .checkmark:after {
+    left: 6px;
+    top: 5px;
+    width: 5px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
+
+    /* добавление товара */
+    .delete h2 {
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
+
+
+    /* конец добавления */
+    .info__about a {
+        font-family: 'Unbounded';
+        font-size: 12px;
+        color: #0000004b;
+    }
+    .ban p{
+       padding-top: 100px;
+    padding-bottom: 100px;    }
+    .ban p{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    /* хедер */
+    header {
+        background-color: #B3A292;
+        height: 100%;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    .header_420 {
+        display: flex;
+        height: 80px;
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .panel-block {
+        display: none;
+    }
+
+    .panel-logo {
+        display: none;
+    }
+
+    .line-panel {
+        display: none;
+    }
+
+    .burg-admin {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #554C46;
+        padding: 35px;
+        gap: 15px;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        display: none;
+        z-index: 10000;
+        gap: 10px;
+        border-radius: 0px;
+
+    }
+
+    .ban p{
+        color: #000000;
+        font-size: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .burg-admin img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .burg-admin a {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+    }
+
+    .profile {
+        padding: 0px 0px 40px 0px;
+    }
+
+    #burger:checked+[for=burger]+.burg-admin {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../img/close.svg);
+        font-size: 11px;
+    }
+
+    .logo__header img {
+        width: 108px;
+        height: 40px
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    [for=burger] {
+        display: flex;
+
+        z-index: 100000;
+    }
+
+    [for=burger]::before {
+        content: url(../img/burg.svg);
+        font-size: 25px;
+    }
+
+    .burg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #B3A292;
+        padding: 50px;
+        gap: 15px;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        display: none;
+        z-index: 10000;
+        gap: 10px;
+        border-radius: 0px;
+    }
+
+    .burg a {
+        color: white;
+    }
+
+    .burg img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #burger:checked+[for=burger]+.burg {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../img/close.svg);
+        font-size: 30px;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+
+    /* конец хедера */
+    /* начало главной */
+    .text__banner {
+        padding-top: 40px;
+        height: 220px;
+    }
+
+    .text__banner h1 {
+        font-family: 'Vetrino';
+        font-size: 38px;
+        color: #9E8C7A;
+    }
+
+    .glav__banner {
+        padding-left: 30px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .foto__banner {
+        padding: 10px 0;
+    }
+
+    .button__banner {
+        padding-top: 30px;
+
+    }
+
+    .button__banner a {
+        background: #B3A292;
+        color: #ffffff;
+        text-align: center;
+        padding: 9px 20px;
+        margin: 20px;
+        font-family: 'Vetrino';
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .button__banner {
+        width: 232px;
+        height: 45px;
+    }
+
+    .foto__banner img {
+        width: 126px;
+        height: 189px;
+    }
+
+    /* НАЧАЛО КОЛЛЕКЦИИ */
+    .kollecshion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .kart__kollecshion img {
+        width: 115px;
+        height: 118px;
+    }
+
+    .kart__kollecshion h3 {
+        font-family: 'Vetrino';
+        font-size: 16px;
+        color: #716152;
+    }
+
+    .kart__kollecshion h4 {
+        font-family: 'Vetrino';
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .text__kollechion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 20px;
+    }
+
+    .info__about a {
+        font-family: 'Unbounded';
+        font-size: 10px;
+        color: #0000004b;
+    }
+
+    /* КОНЕЦ КОЛЛЕКЦИИ */
+    h2 {
+        font-family: 'Vetrino';
+        font-size: 28px;
+        color: #716152;
+        text-align: center;
+        padding: 60px 0px 20px 0px;
+    }
+
+    /* НАЧАЛО КАТЕГОРИИ */
+    .kategirii__vse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 18px;
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    .kategorii_odin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .kategirii__vse img {
+        width: 177px;
+        height: 252px;
+    }
+
+    .kategorii_odin img {
+        width: 195px;
+        height: 122px;
+    }
+
+    /* КОНЕЦ КАТЕГОРИИ */
+    /* НАЧАЛО ФУТЕРА */
+    footer {
+        background-color: #B3A292;
+        height: 100%;
+        padding-top: 60px;
+        padding-bottom: 45px;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .icon_seti {
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+    }
+
+    .icon_seti img {
+        width: 25px;
+        height: 32px;
+    }
+
+    .logo__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 108px;
+        height: 40px
+    }
+
+    .nav__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding: 30px 0px 35px 0px;
+    }
+
+    .nav__footer a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .nav__kontakt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .obrat_forma {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 55px;
+        align-items: center;
+    }
+
+    input {
+        border-bottom: 1px solid #ffffff;
+        background-color: transparent;
+        padding: 10px;
+        width: 322px;
+        font-family: 'Unbounded';
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    input::placeholder {
+        font-family: 'Unbounded';
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    .forma_obr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        align-items: center;
+
+    }
+
+    .naav__footer a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .nav__kontakt a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    .nav__kontakt p {
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+
+    .obrat_forma h6 {
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .btn__footer {
+
+        padding: 12px 84px;
+        width: 320px;
+        height: 44px;
+        border: 1px solid #FFFFFF;
+    }
+
+    .btn__footer a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .footer_name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        padding-top: 33px;
+    }
+
+    .str__name {
+        width: 100%;
+        border-bottom: 1px solid #ffffff;
+        padding-top: 45px;
+        padding-bottom: 33px;
+    }
+
+
+    .footer_name p {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 11px;
+        color: #FFFFFF;
+    }
+
+    .footer_name a {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 11px;
+        color: #FFFFFF;
+    }
+
+    /* КОНЕЦ ФУТЕРА */
+
+    /* НАЧАЛО БАННЕРА */
+    .banner__about {
+        background-image: url(../img/about/about_banner.png);
+        background-size: cover;
+        height: 35vh;
+        width: 100%;
+    }
+
+    .banner__about__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+
+
+    }
+
+    .banner__about__text h1 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        align-items: center;
+    }
+
+    /* КОНЕЦ БАННЕРА */
+
+    /* НАЧАЛО О КОМПАНИИ */
+    .oabout {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .info__about img {
+        width: 232px;
+        height: 260px;
+    }
+
+    .info__about p {
+        font-family: 'Unbounded';
+        font-size: 10px;
+        font-weight: 300;
+        background: rgba(179, 162, 146, 0.63);
+        box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.76);
+        border-radius: 35px;
+        width: 388px;
+        height: 135px;
+        padding: 32px 24px;
+    }
+
+    /* КОНЕЦ О КОМПАНИИ */
+
+    /* НАЧАЛО ТЕКСТ ЭКОЛОГОИЧСЕКИЙ */
+    .ekolig__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 45px;
+    }
+
+    .ekolog__about_info img {
+        width: 296px;
+        height: 181px;
+    }
+
+    .ekolog__about_info p {
+        width: 380px;
+        height: 75px;
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    /* КОНЕЦ ТЕКСТ ЭКОЛОГОИЧСЕКИЙ */
+
+    /* НАЧАЛО ПРОИЗВОДСТА ТЕКСТ */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .about_proizvodsvo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .about_proizvodsvo img,
+    .about_proizvodsv img {
+        width: 178px;
+        height: 170px;
+    }
+
+    .about_proizvodsv {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 100px;
+    }
+
+    .info_proizvodsvo_info h3 {
+        width: 120px;
+        height: 40px;
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 25px;
+        color: #716152;
+    }
+
+    .info_proizvodsvo_info p {
+        width: 216px;
+        height: 68px;
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        color: #000000;
+    }
+
+    .info_proizvodsvo_info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* КОНЕЦ ПРОИЗВОДСТА ТЕКСТ */
+    /* НАЧААЛО КАТАЛОГА */
+    .none {
+        display: none;
+    }
+
+
+    .ro {
+        width: 33px;
+        height: 33px;
+        font-size: 15px;
+    }
+
+    .rov {
+        background: #B3A292;
+        color: #ffffff;
+        width: 33px;
+        height: 33px;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    .ro:hover {
+        background: #B3A292;
+        color: #ffffff;
+    }
+
+    .rows {
+        padding-bottom: 50px;
+    }
+
+    .katalog_kart {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    /* КОНЕЦ КАТАЛОГА */
+    /* НАЧАЛО КОРЗИНЫ */
+    .korzina_glav {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .zakaz_korzina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tovar_korzina {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img_korzina {
+        padding-right: 10px;
+    }
+    .btn_regist {
+        font-family: 'Vetrino';
+        width: 324px;
+        height: 45px;
+        border: 1px solid #554C46;
+        background-color: transparent;
+        color: #554C46;
+        padding-left: 20px;
+        margin-top: 25px
+    }
+    .btn_regist:hover{
+        background-color: #9E8C7A;
+        color: #FFFFFF;
+    }
+    .chek-log p {
+        font-size: 14px;
+        color: black;
+    }
+
+    .rp {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: #716152;
+        text-align: left;
+    }
+
+    .itog {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 20px;
+        color: #716152;
+        padding-bottom: 10px;
+    }
+
+    .info_div_korz h3 {
+        font-family: 'Unbounded';
+        font-weight: 300;
+        font-size: 20px;
+        color: #000000;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 196px;
+    }
+
+    .info_div_korz h4 {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #716152;
+        padding-bottom: 70px;
+    }
+
+    .img_korzina img {
+        width: 160px;
+        height: 172px;
+    }
+
+    .info_div_korz p {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;
+    }
+
+    .tovar_korzina {
+        width: 385px;
+        height: 158px;
+        background: rgba(179, 162, 146, 0.19);
+        border-radius: 30px;
+        margin-bottom: 30px;
+        /* padding: 100px 100px; */
+    }
+
+    .dostavka_korz {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 367px;
+        height: 62px;
+        background: rgba(48, 108, 51, 0.56);
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .zakaz_korzina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 390px;
+        height: 519px;
+        background: rgba(179, 162, 146, 0.19);
+        border-radius: 30px;
+        padding: 80px 15px 40px 15px;
+    }
+
+    .promokod {
+        width: 247px;
+        height: 46px;
+        background: rgba(179, 162, 146, 0.23);
+        border-radius: 20px;
+        color: #000000;
+        padding: 20px;
+        margin-top: 22px;
+    }
+
+    .promokod::placeholder {
+        color: #000000;
+        font-size: 16px;
+        font-family: 'Vetrino';
+    }
+
+    .promokod_korzina input {
+        border: none;
+    }
+
+    .promokod_korzina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 367px;
+        height: 150px;
+        background: rgba(179, 162, 146, 0.21);
+        border-radius: 20px;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .tova_prise h4 {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .tova_prise p {
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    .tova_prise {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+        padding-top: 35px;
+    }
+
+    .btn_button_korzina {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 331px;
+        height: 54px;
+        background: #716152;
+        border-radius: 20px;
+        align-items: center;
+        margin-top: 44px;
+    }
+
+    .btn_button_korzina:hover {
+        border: 1px solid #554C46;
+        background-color: transparent;
+    }
+
+    .btn_button_korzina a:hover {
+        color: #554C46;
+    }
+
+    .btn_button_korzina a {
+        height: 25px;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .counter {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 70px;
+    }
+
+    .info_div_korz {
+        width: 150px;
+    }
+
+    #increment-btn,
+    #decrement-btn,
+    #reset {
+        height: 30px;
+        width: 50px;
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: #554C46;
+        border: 2px solid #554C46;
+        color: white;
+        margin: 15px;
+    }
+
+    #reset {
+        font-size: 20px;
+    }
+
+    #counter-value {
+        height: 30px;
+        min-width: 60px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #554C46;
+        /* margin-top: 20px; */
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* КОНЕЦ КОРЗИНЫ */
+    /* НАЧАЛО КАРТОЧКИ */
+    .glav_img_kart img {
+        width: 236px;
+        height: 355px;
+    }
+
+    .img_kartochki img {
+        width: 94px;
+        height: 112px;
+    }
+
+    .img__kart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .img_kart_glav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .img_kartochki {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .info__kartochka h3 {
+        font-size: 36px;
+    }
+
+    .info__kartochka {
+        padding-top: 30px;
+        padding-left: 5px;
+    }
+
+    .kartochka {
+        padding: 20px;
+    }
+
+    .opisanie_kart h5 {
+        width: 350px;
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .opisanie_kart p {
+        font-size: 20px;
+    }
+
+    .infografika img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .price_kart h5 {
+        width: 171px;
+        font-size: 35px;
+        line-height: 50px;
+        color: #716152;
+    }
+
+    .nalivii p {
+        font-size: 16px;
+        line-height: 17px;
+        color: #716152;
+    }
+
+    .nalivii {
+        padding: 30px 0 50px 0;
+    }
+
+    .infografika p {
+        width: 67px;
+        font-size: 13px;
+        color: #000000;
+    }
+
+    .infografika_kart {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        padding: 60px 0;
+    }
+
+    .opisanie_kart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .infografika {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price_kart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 160px;
+        padding-bottom: 40px;
+    }
+
+    .price_kart img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* КОНЕЦ КАРТОЧКИ */
+    /* НАЧАЛО СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ */
+    .polzvatel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 85px;
+        padding-bottom: 60px;
+    }
+
+    .img_polzv_login {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 25px;
+        padding-top: 40px;
+    }
+
+    .login_polzovatel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .zakaz__polzovatel {
+        width: 372px;
+        height: 257px;
+    }
+
+    .img_polzv_login img {
+        width: 127px;
+        height: 127px;
+    }
+
+    .itog_zakaz__odin {
+        width: 280px;
+        padding-top: 25px;
+    }
+
+    .itog_zakaz p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .itog_zakaz h5 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .zakaz__polzovatel h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .login_polzovatel p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 5px;
+    }
+
+    .col {
+        font-size: 24px;
+        line-height: 21px;
+    }
+
+    /* КОНЕЦ СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ */
+    /* НАЧАЛО РЕГАСТРАЦИИ */
+    .registrati,
+    .delete-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .registrati h2,
+    .delete h2 {
+        font-size: 32px;
+    }
+
+    .registrati h2 {
+        padding-bottom: 40px;
+    }
+
+    .form_regista input {
+        width: 324px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .form_regista ::placeholder {
+        font-size: 13px;
+    }
+
+    .regista-info p {
+        font-family: 'Vetrino';
+        color: #554C46;
+        font-size: 13px;
+
+    }
+
+    .regista-info a {
+        font-family: 'Vetrino';
+        color: #554C46;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    .registrati a {
+        background-color: transparent;
+        border: 1px solid #554C46;
+        padding: 14px 40px;
+        margin: 0 auto;
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 13px;
+        color: #716152;
+    }
+
+    .form_regista {
+        gap: 25px;
+    }
+
+    /* КОНЕЦ РЕГЕСТРАЦИИ */
+
+    /*  НАЧАЛО ЛОГТН*/
+    .login {
+        padding: 20px 0px 90px 0;
+    }
+
+    .logina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logina h2 {
+        font-size: 32px;
+        padding-bottom: 40px;
+    }
+
+    .forma_login input {
+        font-family: 'Vetrino';
+        width: 324px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+    .forma_login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 55px;
+    }
+
+    .logina a {
+        font-size: 13px;
+        padding: 10px 80px;
+    }
+
+    .logina-info p {
+        font-family: "Vetrino";
+        color: #554C46;
+        font-size: 14px;
+    }
+
+    .forma_login ::placeholder {
+        text-align: left;
+        font-family: "Vetrino";
+        font-size: 12px;
+        color: #554C46;
+    }
+
+    /*  КОНЕЦ ЛОГТН*/
+
+    /* ADMIN ТОВАРЫ */
+    .admin {
+        width: 100%;
+        background: #554C46;
+    }
+
+    .card-tovar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .card-tovar h6 {
+
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: #FFFFFF;
+        width: 100px;
+    }
+
+    .cards h5 {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 0 0 30px 30px;
+    }
+
+    .btn_admin_tovar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn_edit a {
+        font-size: 12px;
+    }
+
+    .btn_delete a {
+        font-size: 12px;
+    }
+
+    .card-tovar img {
+        width: 108px;
+        height: 116px;
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .admin {
+        display: none;
+    }
+
+    .admin-bl {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .str {
+        margin: 50px 0px;
+    }
+
+    /* КОНЕЦ АДМИН ТОВАРОВ */
+    /* НАЧАЛО АДМИН ПОЛЬЗОВАТЕЛЕЙ */
+
+    .polzovalel_admin {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 15px;
+        background: rgba(217, 217, 217, 0.1);
+        padding: 20px 20px;
+        margin-bottom: 30px;
+
+
+    }
+
+    .polzovalel_admin a {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .admin-bloc h3 {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 20px 40px 11px 10px;
+    }
+
+    .pozovalel h3 {
+        font-family: 'Unbounded';
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 20px 40px 11px 10px;
+    }
+
+    /* КОНЕЦ АДМИН ПОЛЬЗОВАТЕЛЕЙ */
+
+    /* .container {
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .container p {
+        font-size: 8px;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: #ffffff;
+    }
+    .error{
+        font-size: 12px;
+        color: #000000a9;
+    }
+
+    .container .checkmark:after {
+        left: 5px;
+        top: 3px;
+        width: 4px;
+        height: 6px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    } */
+
+    /* Добавление товара */
+    .form_login input {
+        width: 352px;
+        height: 65px;
+        border: 1px solid #716152;
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 12px;
+        color: #503217;
+    }
+
+    .delete h2 {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .login-block a {
+        width: 215px;
+        height: 50px;
+        border: 1px solid #716152;
+        padding: 13px 66px;
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #503217;
+    }
+
+    .form_login {
+        padding-bottom: 20px;
+    }
+
+    .form_login ::placeholder {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 12px;
+        color: #503217;
+    }
+
+    .redakt_btn a {
+        width: 215px;
+        height: 50px;
+        border: 1px solid #716152;
+        padding: 5px 66px;
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #503217;
+
+    }
+
+    /* конец добавления */
+    /* редактирование */
+    /*  НАЧАЛО ЛОГТН*/
+    .form_regist input {
+        width: 352px;
+        height: 65px;
+        border: 1px solid #716152;
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 12px;
+        color: #503217;
+    }
+
+    .form_regist ::placeholder {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 12px;
+        color: #503217;
+    }
+
+    .form_regist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .regist-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .regist-block a {
+        width: 215px;
+        height: 50px;
+        border: 1px solid #716152;
+        padding: 17px 50px;
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #503217;
+    }
+
+    /* КОНЕЦ РЕДАКТИРОВАНИЯ */
+    /*  НАЧАЛО ЛОГТН*/
+    .form_dobav input {
+        width: 352px;
+        height: 65px;
+        border: 1px solid #716152;
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 12px;
+        color: #503217;
+    }
+
+    .form_dobav ::placeholder {
+        font-family: 'Vetrino';
+        font-weight: 400;
+        font-size: 12px;
+        color: #503217;
+    }
+
+    .form_dobav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .dobav-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .dobav-block a {
+        width: 215px;
+        height: 50px;
+        border: 1px solid #716152;
+        padding: 17px 70px;
+        font-family: 'Vetrino';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #503217;
+    }
+
+    /* КОНЕЦ РЕДАКТИРОВАНИЯ */
+    /* Начало удаления */
+    .delete {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 106px 40px;
+    }
+
+    .delete h2 {
+        font-size: 24px;
+    }
+
+    .info-delete p {
+        font-size: 14px;
+
+    }
+
+    .delete-btn a {
+        width: 110px;
+        height: 50px;
+        background: #FFFFFF;
+        font-size: 16px;
+        padding: 15px 14px;
+    }
+
+    .delete-btn {
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+    }
+
+    /* конец удаления */
+    /* начало фильра */
+    .fil_420 {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 5px;
+    }
+
+    body {
+        position: relative;
+    }
+
+    [for=filter] {
+        display: flex;
+        justify-content: right;
+    }
+
+    [for=filter]::before {
+        content: url(../img/fil.svg);
+        font-size: 10px;
+        padding: 0px 20px 10px 0px;
+    }
+
+    .fil {
+        position: absolute;
+        width: 35%;
+        background-color: #a79785;
+        padding: 90px 15px 30px 20px;
+        gap: 15px;
+        top: 100px;
+        right: 20px;
+        flex-direction: column;
+        display: none;
+        z-index: 100;
+    }
+
+    .fil a {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-family: "Unbounded-Light";
+        text-align: right;
+    }
+
+    #filter:checked+[for=filter]+.fil {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #filter:checked+[for=filter]::before {
+        content: url(../img/close.svg);
+        font-size: 18px;
+        z-index: 1000;
+        padding: 10px 30px 0px 0px;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* конец фильтра */
+
+}
